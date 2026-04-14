@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bhutan-exclusive-travel/static/css/main.2cd58d01.css",
+    "main.js": "/bhutan-exclusive-travel/static/js/main.b643d4f7.js",
+    "index.html": "/bhutan-exclusive-travel/index.html",
+    "main.2cd58d01.css.map": "/bhutan-exclusive-travel/static/css/main.2cd58d01.css.map",
+    "main.b643d4f7.js.map": "/bhutan-exclusive-travel/static/js/main.b643d4f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cd58d01.css",
+    "static/js/main.b643d4f7.js"
+  ]
+}
