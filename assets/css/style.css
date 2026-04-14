@@ -479,7 +479,11 @@ body {
 .navbar-link:is(:hover, :focus) { border-color: var(--white-1); }
 
 
-
+@media (min-width: 992px) {
+  .nav-toggle-btn {
+    display: none !important;
+  }
+}
 
 
 /*-----------------------------------*\

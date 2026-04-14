@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bhutan-exclusive-travel/static/css/main.2cd58d01.css",
-    "main.js": "/bhutan-exclusive-travel/static/js/main.a8eb2f7b.js",
+    "main.js": "/bhutan-exclusive-travel/static/js/main.4c43b147.js",
     "index.html": "/bhutan-exclusive-travel/index.html",
     "main.2cd58d01.css.map": "/bhutan-exclusive-travel/static/css/main.2cd58d01.css.map",
-    "main.a8eb2f7b.js.map": "/bhutan-exclusive-travel/static/js/main.a8eb2f7b.js.map"
+    "main.4c43b147.js.map": "/bhutan-exclusive-travel/static/js/main.4c43b147.js.map"
   },
   "entrypoints": [
     "static/css/main.2cd58d01.css",
-    "static/js/main.a8eb2f7b.js"
+    "static/js/main.4c43b147.js"
   ]
 }
