@@ -412,11 +412,14 @@ body {
 }
 
 .header {
-  background: var(--viridian-green);
-  padding-block: 10px;
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  padding-block: 12px;
   height: 88px;
   overflow: hidden;
-  transition: 0.25s var(--cubic-out);
+  transition: 0.3s ease;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .header.active {
