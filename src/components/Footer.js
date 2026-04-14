@@ -1,24 +1,22 @@
 function Footer() {
   return (
-   <footer
-  id="footer"
-  className="footer"
-  style={{
-    backgroundImage: "url('/assets/images/footer-bg.png')",
-    borderTopLeftRadius: "40px",
-    borderTopRightRadius: "40px",
-    overflow: "hidden"
-  }}
->
+    <footer
+      id="footer"
+      className="footer"
+      style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/footer-bg.png)`,
+        borderTopLeftRadius: "40px",
+        borderTopRightRadius: "40px",
+        overflow: "hidden"
+      }}
+    >
 
       <div className="container">
 
         {/* FOOTER TOP */}
         <div className="footer-top">
 
-
           {/* BHUTAN DESTINATIONS */}
-
           <ul className="footer-list">
 
             <li>
@@ -59,9 +57,7 @@ function Footer() {
 
           </ul>
 
-
           {/* TOUR TYPES */}
-
           <ul className="footer-list">
 
             <li>
@@ -102,9 +98,7 @@ function Footer() {
 
           </ul>
 
-
           {/* QUICK LINKS */}
-
           <ul className="footer-list">
 
             <li>
@@ -138,16 +132,14 @@ function Footer() {
             </li>
 
             <li>
-              <a href="#contact" className="footer-link">
+              <a href="https://theasiantrip.com/" className="footer-link">
                 Contact
               </a>
             </li>
 
           </ul>
 
-
           {/* NEWSLETTER */}
-
           <div className="footer-list">
 
             <p className="footer-list-title">
@@ -181,9 +173,7 @@ function Footer() {
 
         </div>
 
-
         {/* FOOTER BOTTOM */}
-
         <div className="footer-bottom">
 
           <a href="#" className="logo">
@@ -194,31 +184,29 @@ function Footer() {
             © {new Date().getFullYear()} Bhutan Exclusive Travel. All Rights Reserved
           </p>
 
-
           {/* SOCIAL ICONS */}
-
           <ul className="social-list">
 
             <li>
-              <a href="#" className="social-link">
+              <a href="https://theasiantrip.com/" className="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" className="social-link">
+              <a href="https://theasiantrip.com/" className="social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" className="social-link">
+              <a href="https://theasiantrip.com/" className="social-link">
                 <ion-icon name="logo-youtube"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" className="social-link">
+              <a href="https://theasiantrip.com/" className="social-link">
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>

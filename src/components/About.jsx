@@ -108,7 +108,7 @@ function About() {
         <figure className="about-banner">
 
           <img
-            src="/assets/images/about-banner.png"
+            src={`${process.env.PUBLIC_URL}/assets/images/about-banner.png`}
             width="756"
             height="842"
             loading="lazy"

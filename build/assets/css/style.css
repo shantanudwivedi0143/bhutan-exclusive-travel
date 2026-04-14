@@ -412,11 +412,14 @@ body {
 }
 
 .header {
-  background: var(--viridian-green);
-  padding-block: 10px;
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  padding-block: 12px;
   height: 88px;
   overflow: hidden;
-  transition: 0.25s var(--cubic-out);
+  transition: 0.3s ease;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .header.active {
@@ -476,12 +479,44 @@ body {
 .navbar-link:is(:hover, :focus) { border-color: var(--white-1); }
 
 
-
+@media (min-width: 992px) {
+  .nav-toggle-btn {
+    display: none !important;
+  }
+}
 
 
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
+
+.hero .hero-content,
+.hero .hero-banner,
+.hero .shape {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+/* when visible */
+.hero.animate .hero-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.hero.animate .hero-banner {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+/* shapes */
+.hero.animate .shape {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition-delay: 0.6s;
+}
 
 .shape { display: none; }
 
@@ -524,6 +559,40 @@ body {
 /*-----------------------------------*\
   #DESTINATION
 \*-----------------------------------*/
+
+
+.destination .section-subtitle,
+.destination .section-title {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.destination .destination-list li {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+/* when visible */
+.destination.animate .section-subtitle,
+.destination.animate .section-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger cards */
+.destination.animate .destination-list li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* delay per card */
+.destination.animate .destination-list li:nth-child(1) { transition-delay: 0.1s; }
+.destination.animate .destination-list li:nth-child(2) { transition-delay: 0.2s; }
+.destination.animate .destination-list li:nth-child(3) { transition-delay: 0.3s; }
+.destination.animate .destination-list li:nth-child(4) { transition-delay: 0.4s; }
+.destination.animate .destination-list li:nth-child(5) { transition-delay: 0.5s; }
 
 .destination .section-subtitle {
   text-align: center;
@@ -585,6 +654,45 @@ body {
 /*-----------------------------------*\
   #POPULAR
 \*-----------------------------------*/
+
+.popular .section-subtitle,
+.popular .section-title {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.7s ease;
+}
+
+.popular .popular-card {
+  opacity: 0;
+  transform: translateY(50px) scale(0.96);
+  transition: all 0.8s ease;
+}
+
+/* activate section */
+.popular.animate .section-subtitle,
+.popular.animate .section-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* cards animate in */
+.popular.animate .popular-card {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* stagger effect */
+.popular.animate .popular-list li:nth-child(1) .popular-card {
+  transition-delay: 0.1s;
+}
+
+.popular.animate .popular-list li:nth-child(2) .popular-card {
+  transition-delay: 0.25s;
+}
+
+.popular.animate .popular-list li:nth-child(3) .popular-card {
+  transition-delay: 0.4s;
+}
 
 .popular-card :is(.card-price, .card-rating) {
   color: var(--white-1);

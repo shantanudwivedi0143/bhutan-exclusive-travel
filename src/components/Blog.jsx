@@ -27,7 +27,7 @@ function Blog() {
               <figure className="card-banner">
 
                 <img
-                  src="./assets/images/popular-1.jpg"
+                  src={`${process.env.PUBLIC_URL}/assets/images/popular-1.jpg`}
                   width="740"
                   height="518"
                   loading="lazy"
@@ -64,7 +64,7 @@ function Blog() {
               <figure className="card-banner">
 
                 <img
-                  src="./assets/images/blog-2.jpg"
+                  src={`${process.env.PUBLIC_URL}/assets/images/blog-2.jpg`}
                   width="740"
                   height="518"
                   loading="lazy"
@@ -101,7 +101,7 @@ function Blog() {
               <figure className="card-banner">
 
                 <img
-                  src="./assets/images/blog-3.jpg"
+                  src={`${process.env.PUBLIC_URL}/assets/images/blog-3.jpg`}
                   width="740"
                   height="518"
                   loading="lazy"

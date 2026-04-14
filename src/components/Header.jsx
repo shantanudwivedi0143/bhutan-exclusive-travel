@@ -12,7 +12,11 @@ function Header() {
 
       {/* CUSTOM HEADER CONTAINER */}
         <div className="plane-animation">
-    <img src="/assets/images/plane.png" alt="plane" className="plane" />
+    <img
+  src={`${process.env.PUBLIC_URL}/assets/images/plane.png`}
+  alt="plane"
+  className="plane"
+/>
     <span className="smoke smoke-1"></span>
     <span className="smoke smoke-2"></span>
     <span className="smoke smoke-3"></span>
@@ -23,10 +27,10 @@ function Header() {
         <div className="plane-animation">
 
         <img
-            src="/assets/images/plane.png"
-            alt="flying plane"
-            className="plane"
-        />
+  src={`${process.env.PUBLIC_URL}/assets/images/plane.png`}
+  alt="plane"
+  className="plane"
+/>
 
         <span className="smoke smoke-1"></span>
         <span className="smoke smoke-2"></span>
@@ -47,13 +51,16 @@ function Header() {
         {/* MOBILE MENU BUTTON */}
 
         <button
-          className={`nav-toggle-btn ${navOpen ? "active" : ""}`}
-          aria-label="Toggle Menu"
-          onClick={() => setNavOpen(!navOpen)}
-        >
-          <ion-icon name="menu-outline" className="open"></ion-icon>
-          <ion-icon name="close-outline" className="close"></ion-icon>
-        </button>
+  className="nav-toggle-btn"
+  aria-label="Toggle Menu"
+  onClick={() => setNavOpen(!navOpen)}
+>
+  {navOpen ? (
+    <ion-icon name="close-outline"></ion-icon>
+  ) : (
+    <ion-icon name="menu-outline"></ion-icon>
+  )}
+</button>
 
 
         {/* NAVBAR */}
@@ -93,7 +100,7 @@ function Header() {
             </li>
 
             <li>
-              <a href="#footer" className="navbar-link" onClick={closeNav}>
+              <a href="https://theasiantrip.com/" className="navbar-link" onClick={closeNav}>
                 Contact
               </a>
             </li>
@@ -104,7 +111,7 @@ function Header() {
           {/* CTA BUTTON */}
 
           <a
-            href="#booking"
+            href="https://theasiantrip.com/"
             className="btn btn-secondary compact-btn"
             onClick={closeNav}
           >

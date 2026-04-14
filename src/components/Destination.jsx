@@ -1,10 +1,15 @@
+import { useRef } from "react";
+import { useScrollReveal } from "../hooks/useScrollReveal";
+
 function Destination() {
+  const ref = useRef(null);
+  const isVisible = useScrollReveal(ref);
 
   return (
-
     <section
-      id="destination"
-      className="section destination"
+    id="destination"
+      ref={ref}
+      className={`destination ${isVisible ? "animate" : ""}`}
     >
 
       <div className="container">
@@ -17,12 +22,9 @@ function Destination() {
           Top Bhutan Travel Destinations
         </h2>
 
-
         <ul className="destination-list">
 
-
           {/* PARO */}
-
           <li className="w-50">
 
             <a href="#tours" className="destination-card">
@@ -30,7 +32,7 @@ function Destination() {
               <figure className="card-banner">
 
                 <img
-                  src="./assets/images/destination-1.jpg"
+                  src={`${process.env.PUBLIC_URL}/assets/images/destination-1.jpg`}
                   width="1140"
                   height="1100"
                   loading="lazy"
@@ -56,9 +58,7 @@ function Destination() {
 
           </li>
 
-
           {/* THIMPHU */}
-
           <li className="w-50">
 
             <a href="#tours" className="destination-card">
@@ -66,7 +66,7 @@ function Destination() {
               <figure className="card-banner">
 
                 <img
-                  src="./assets/images/destination-2.jpg"
+                  src={`${process.env.PUBLIC_URL}/assets/images/destination-2.jpg`}
                   width="1140"
                   height="1100"
                   loading="lazy"
@@ -92,9 +92,7 @@ function Destination() {
 
           </li>
 
-
           {/* PUNAKHA */}
-
           <li>
 
             <a href="#tours" className="destination-card">
@@ -102,7 +100,7 @@ function Destination() {
               <figure className="card-banner">
 
                 <img
-                  src="./assets/images/destination-3.jpg"
+                  src={`${process.env.PUBLIC_URL}/assets/images/destination-3.jpg`}
                   width="1110"
                   height="480"
                   loading="lazy"
@@ -128,9 +126,7 @@ function Destination() {
 
           </li>
 
-
           {/* BUMTHANG */}
-
           <li>
 
             <a href="#tours" className="destination-card">
@@ -138,7 +134,7 @@ function Destination() {
               <figure className="card-banner">
 
                 <img
-                  src="./assets/images/destination-4.jpg"
+                  src={`${process.env.PUBLIC_URL}/assets/images/destination-4.jpg`}
                   width="1110"
                   height="480"
                   loading="lazy"
@@ -164,9 +160,7 @@ function Destination() {
 
           </li>
 
-
           {/* PHOBJIKHA VALLEY */}
-
           <li>
 
             <a href="#tours" className="destination-card">
@@ -174,7 +168,7 @@ function Destination() {
               <figure className="card-banner">
 
                 <img
-                  src="./assets/images/destination-5.jpg"
+                  src={`${process.env.PUBLIC_URL}/assets/images/destination-5.jpg`}
                   width="1110"
                   height="480"
                   loading="lazy"
@@ -200,15 +194,11 @@ function Destination() {
 
           </li>
 
-
         </ul>
 
       </div>
-
     </section>
-
   );
-
 }
 
 export default Destination;
